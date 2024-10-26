@@ -17,6 +17,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Test
-        uses: docker compose run --rm node-app sh -c "python manage.py test"
+        uses: docker compose run --rm miguelmw2/node-app sh -c "python manage.py test"
       - name: Lint
-        uses: docker compose run --rm node-app sh -c "flake8"
+        uses: docker compose run --rm miguelmw2/node-app sh -c "flake8"
